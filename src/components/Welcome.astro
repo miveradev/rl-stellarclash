@@ -1,0 +1,230 @@
+---
+
+---
+<video id="background-video" autoplay loop muted>
+	<source src="/public/background.mp4" type="video/mp4">
+</video>
+<div class="content">
+	<img id="logo" src="/public/rl-stellarclash.png" alt="rocket-league-stellar-clash">
+	<h1>Rocket League: Stellar Clash</h1>
+	<h2>07/02/2025</h2>
+	<span>Inscripciones abiertas</span>
+	<div class="buttons">
+		<a href="https://forms.gle/eUVHKMMXQDMDZpMc6" target="_blank" class="main-button">Inscribirme</a>
+		<a href="#info" class="second-button">Mas Información</a>
+	</div>
+</div>
+
+<section id="info">
+	<h3>¡Bienvenidos al torneo más frenético del Sistema Solar!</h3>
+	<p>En este evento, hasta <strong><i>32 equipos</i></strong> con temática basada en los astros de nuestro alrededor se enfrentarán en un torneo <strong>3v3</strong> para determinar quién es el mejor y ser merecedor de gobernar nuestro Sistema. <i>¿Te atreves a demostrar que tú y tu grupo sois los verdaderos candidatos al premio?</i></p>
+</section>
+
+<section id="structure">
+	<h3>Estructura del Torneo</h3>
+	<p>El evento se desarrollará durante <strong>3 días consecutivos</strong>, dividiéndose en dos fases principales</p>
+	<h4>Fase de grupos <i> (DAY 1 y DAY 2)</i>:</h4>
+	<div class="points">
+		<ul>
+			<li>Los 32 equipos participantes se dividirán en 8 grupos de 4 equipos</li>
+			<li>Cada grupo jugará en un formato de todos contra todos (round robin) a partido único</li>
+			<li>
+				Se asignarán puntos en función de los resultados: <br>
+				<ul>
+					<li><strong>Victoria</strong>: 1 punto.</li>
+					<li><strong>Derrota</strong>: 0 puntos.</li>
+				</ul>
+			</li>
+			<li>
+				En caso de <strong>empate en puntos</strong>, se utilizarán los siguientes criterios de desempate:
+				<br>
+				<ul>
+					<li><strong>DF</strong> (Diferencia de goles).</li>
+					<li><strong>GF</strong> (Goles a favor).</li>
+					<li><strong>Resultado directo</strong> entre los equipos empatados.</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<h4>Fase de eliminatorias <i> (DAY 3)</i>:</h4>
+	<div class="points">
+		<ul>
+			<li>Los <strong>2 mejores equipos</strong> de cada grupo avanzarán a una fase eliminatoria con un total de 16 equipos.</li>
+			<li>Los enfrentamientos de eliminatorias se disputarán en un formato <strong>best of 3</strong></li>
+			<li>
+				La <strong>final</strong> se jugará en un formato <strong>best of 5</strong>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<style>
+	* {
+		font-family: Poppins, Arial, Helvetica, sans-serif;
+	}
+	#background-video {
+		width: 100vw;
+		height: 100vh;
+		object-fit: cover;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		animation: fadeInVideo 5s;
+		z-index: -1;
+	}
+
+	.content {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-family: Poppins, Arial, Helvetica, sans-serif;
+	}
+
+	#logo {
+		margin-top: 10%;
+		width: 55%;
+		animation: fadeInImage 3s;
+		animation-timing-function: ease-in-out;
+	}
+
+	@keyframes fadeInImage {
+		0% { 
+			opacity: 0;
+			scale: 85%;
+		}
+		70% {
+			scale: 105%;
+		}
+		100% { 
+			opacity: 1;
+			scale: 100%;
+		}
+	}
+
+	@keyframes fadeInVideo {
+		0% { 
+			opacity: 0;
+		}
+		100% { 
+			opacity: 1;
+		}
+	}
+
+	h1 {
+		display: none;
+	}
+	
+	h2 {
+		font-family: Oswald, 'Courier New', Courier, monospace;
+		font-weight: bolder;
+		font-size: 50px;
+		margin-bottom: 0rem;
+		text-shadow: rgb(255, 255, 255) 0px 0px 100px;
+		transition: 0.5s ease-in-out;
+		cursor: default;
+		margin-top: 0;
+	}
+
+	h2:hover {
+		scale: 105%;
+	}
+
+	span {
+		font-family: Oswald, 'Courier New', Courier, monospace;
+		font-weight: 600;
+		font-style: italic;
+		font-size: 20px;
+		text-shadow: rgb(255, 255, 255) 0px 0px 100px;
+		transition: 0.5s ease-in-out;
+		cursor: default;
+	}
+
+	span:hover {
+		scale: 105%;
+	}
+
+	.buttons {
+		display: flex;
+		gap: 40px;
+		margin-top: 3rem;
+	}
+
+	a {
+		padding: 10px 30px;
+		border-radius: 30px;
+		background: none;
+		border: solid 3px white;
+		color: white;
+		font-size: 20px;
+		cursor: pointer;
+		transition: 0.5s ease-in-out;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		scale: 110%;
+	}
+
+	.main-button {
+		background-color: white;
+		color: black;
+	}
+
+	#info {
+		margin: 0rem 15%;
+		margin-bottom: 14rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h3 {
+			font-family: Oswald, 'Courier New', Courier, monospace;
+			font-size: 50px;
+		}
+
+		p {
+			font-size: 22px;
+			text-align: center;
+		}
+	}
+
+	#structure {
+		margin: 0rem 15%;
+		margin-bottom: 10rem;
+
+		h3 {
+			font-family: Oswald, 'Courier New', Courier, monospace;
+			font-size: 50px;
+			margin-bottom: 4rem;
+			line-height: 0;
+		}
+
+		h4 {
+			font-family: Oswald, 'Courier New', Courier, monospace;
+			font-size: 26px;
+			margin-top: 4rem;
+			margin-bottom: 2rem;
+			line-height: 0;
+		}
+
+		p {
+			font-size: 22px;
+		}
+		
+		.points {
+			margin-bottom: 7rem;
+		}
+
+		ul {
+			font-size: 20px;
+			line-height: 4;
+		}
+
+		li > ul {
+			line-height: 2;
+			margin-bottom: 1.5rem;
+		}
+	}
+</style>
