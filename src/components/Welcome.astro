@@ -1,9 +1,13 @@
 ---
 
 ---
-<video id="background-video" autoplay loop muted>
+<!-- <video id="background-video" autoplay loop muted>
 	<source src="./background.mp4" type="video/mp4">
-</video>
+</video> -->
+<div class="background">
+	<img src="./background.png" alt="background">
+</div>
+
 <div class="content">
 	<img id="logo" src="./rl-stellarclash.png" alt="rocket-league-stellar-clash">
 	<h1>Rocket League: Stellar Clash</h1>
@@ -12,6 +16,9 @@
 	<div class="buttons">
 		<a href="https://forms.gle/eUVHKMMXQDMDZpMc6" target="_blank" class="main-button">Inscribirme</a>
 		<a href="#info" class="second-button">Mas Información</a>
+	</div>
+	<div class="arrows-down">
+		<img src="./arrows-down.png" alt="arrows-down">
 	</div>
 </div>
 
@@ -62,16 +69,14 @@
 	* {
 		font-family: Poppins, Arial, Helvetica, sans-serif;
 	}
-	#background-video {
-		width: 100vw;
+
+	.background {
 		height: 100vh;
-		object-fit: cover;
 		position: fixed;
 		left: 0;
 		right: 0;
 		top: 0;
 		bottom: 0;
-		animation: fadeInVideo 5s;
 		z-index: -1;
 	}
 
@@ -86,8 +91,13 @@
 	#logo {
 		margin-top: 10%;
 		width: 55%;
-		animation: fadeInImage 3s;
+		animation: fadeInImage 2s;
 		animation-timing-function: ease-in-out;
+		transition: 1s ease-in-out;
+	}
+
+	#logo:hover {
+		scale: 105%;
 	}
 
 	@keyframes fadeInImage {
@@ -101,15 +111,6 @@
 		100% { 
 			opacity: 1;
 			scale: 100%;
-		}
-	}
-
-	@keyframes fadeInVideo {
-		0% { 
-			opacity: 0;
-		}
-		100% { 
-			opacity: 1;
 		}
 	}
 
@@ -150,6 +151,7 @@
 		display: flex;
 		gap: 40px;
 		margin-top: 3rem;
+		margin-bottom: 4rem;
 	}
 
 	a {
@@ -171,6 +173,10 @@
 	.main-button {
 		background-color: white;
 		color: black;
+	}
+
+	.arrows-down > img{
+		width: 2rem;
 	}
 
 	#info {
