@@ -15,7 +15,7 @@
 	<span>Inscripciones abiertas</span>
 	<div class="buttons">
 		<a href="https://forms.gle/eUVHKMMXQDMDZpMc6" target="_blank" class="main-button">Inscribirme</a>
-		<a href="#info" class="second-button">Mas Información</a>
+		<a href="https://docs.google.com/document/d/1iCrY_sdzacETNtxOxZQi7BtV8mip5GrdOX53w_AmqaE/edit?usp=sharing" target="_blank" class="second-button">Mas Información</a>
 	</div>
 	<div class="arrows-down">
 		<img src="./arrows-down.png" alt="arrows-down">
@@ -27,7 +27,7 @@
 	<p>En este evento, hasta <strong class="gradient-text"><i>32 equipos</i></strong> con temática basada en los astros de nuestro alrededor se enfrentarán en un torneo <strong class="gradient-text">3v3</strong> para determinar quién es el mejor y ser merecedor de gobernar nuestro Sistema. <i>¿Te atreves a demostrar que tú y tu grupo sois los verdaderos candidatos al premio?</i></p>
 </section>
 
-<section id="structure">
+<section class="structure">
 	<h3>Estructura del Torneo</h3>
 	<p>El evento se desarrollará durante <strong class="gradient-text">3 días consecutivos</strong>, dividiéndose en dos fases principales</p>
 	<h4><strong class="gradient-text-blue">Fase de grupos <i> (DAY 1 y DAY 2)</i> :</strong></h4>
@@ -65,6 +65,75 @@
 	</div>
 </section>
 
+<section class="structure">
+	<h3>Fechas</h3>
+	<div class="row">
+		<div class="column">
+			<span class="time-title">Apertura de Inscripciones</span>
+		</div>
+		<div class="column">
+			<strong class="gradient-text">11 de Enero 00:00h CET</strong>
+		</div>
+	</div>
+	<div class="row">
+		<div class="column">
+			<span class="time-title">Cierre de Inscripciones</span>
+		</div>
+		<div class="column">
+			<strong class="gradient-text">31 de Enero 23:59h CET</strong>
+		</div>
+	</div>
+	<div class="division-line"></div>
+	<div class="row">
+		<div class="column">
+			<span class="time-title">Presentacion de Equipos</span>
+		</div>
+		<div class="column">
+			<strong class="gradient-text">1 de Febrero - 4 de Febrero CET</strong>
+		</div>
+	</div>
+	<div class="division-line"></div>
+	<div class="row">
+		<div class="column">
+			<span class="time-title">Sorteo de Fase de Grupos</span>
+		</div>
+		<div class="column">
+			<strong class="gradient-text">5 de Febrero, 21:00h CET</strong>
+		</div>
+	</div>
+	<div class="division-line"></div>
+	<div class="row">
+		<div class="column">
+			<span class="time-title">DAY 1 (Fase de Grupos)</span>
+		</div>
+		<div class="column">
+			<strong class="gradient-text">7 de Febrero 17:00h CET</strong>
+		</div>
+	</div>
+	<div class="row">
+		<div class="column">
+			<span class="time-title">DAY 2 (Fase de Grupos)</span>
+		</div>
+		<div class="column">
+			<strong class="gradient-text">8 de Febrero 17:00h CET</strong>
+		</div>
+	</div>
+	<div class="row">
+		<div class="column">
+			<span class="time-title">DAY 3 (Fase de Eliminatorias</span>
+		</div>
+		<div class="column">
+			<strong class="gradient-text">9 de Febrero 15:00h CET</strong>
+		</div>
+	</div>
+</section>
+
+<section class="structure next">
+	<h3>Próximamente</h3>
+	<p>Equipos, participantes y premios serán anunciados en breve...</p>
+	<p>Para más información, consulta el <a href="https://docs.google.com/document/d/1iCrY_sdzacETNtxOxZQi7BtV8mip5GrdOX53w_AmqaE/edit?usp=sharing" target="_blank"><strong class="gradient-text">Dossier Oficial</strong></a> o ponte en contacto con <strong class="gradient-text">spasiomike</strong>.</p>
+</section>
+
 <style>
 	* {
 		font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -85,6 +154,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 		font-family: Poppins, Arial, Helvetica, sans-serif;
 	}
 
@@ -185,7 +255,7 @@
 	}
 
 	.main-button {
-		background-color: rgb(224, 224, 224);;
+		background-color: rgb(224, 224, 224);
 		color: black;
 	}
 
@@ -217,6 +287,7 @@
 		h3 {
 			font-family: Oswald, 'Courier New', Courier, monospace;
 			font-size: 50px;
+			text-align: center;
 		}
 
 		p {
@@ -225,7 +296,7 @@
 		}
 	}
 
-	#structure {
+	.structure {
 		margin: 0rem 15%;
 		margin-bottom: 10rem;
 
@@ -267,6 +338,55 @@
 			line-height: 2;
 			margin-bottom: 1.5rem;
 		}
+
+		.time-title{
+			font-family: Oswald, 'Courier New', Courier, monospace;
+			font-weight: 600;
+			font-size: 24px;
+			color: rgb(224, 224, 224);
+			background: rgb(224, 224, 224);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: rgb(224, 224, 224);
+			text-shadow: none;
+			animation: bounce 3s ease-in-out;
+			animation-iteration-count: infinite;
+			transition: 0.5s ease-in-out;
+			cursor: default;
+		}
+
+		.row {
+			display: flex;
+			gap: 30px;
+			align-items:first baseline;
+		}
+
+		.column {
+			width: 300px;
+		}
+
+		.division-line {
+			margin: 1rem 0;
+			height: 1px;
+			background-color: rgb(224, 224, 224);
+			width: 600px;
+		}
+	}
+
+	.next p {
+		line-height: 1;
+		font-size: 18px;	
+	}
+
+	.next a {
+		text-decoration: none;
+		cursor: pointer;
+		background-color: none;
+		padding: 0;
+		border: none;
+	}
+
+	.next a strong {
+		cursor: pointer;
 	}
 
 	.gradient-text {
@@ -290,4 +410,189 @@
 	.gradient-text:hover{
 		font-size: 105%;
 	}
+
+
+
+
+	/* MEDIA QUERIES */
+
+	@media (max-width: 1024px) {
+		a {
+			padding: 5px 20px;
+			font-size: 14px;
+		}
+
+		#info {
+			margin-bottom: 10rem;
+		}
+		
+		#info h3 {
+			font-size: 30px;
+		}
+
+		#info p {
+			font-size: 14px;
+		}
+
+		.structure h3 {
+			font-size: 30px;
+			margin-bottom: 3rem;
+		}
+		
+		.structure p {
+			font-size: 14px;
+			line-height: 1.5;
+		}
+
+		.structure li {
+			line-height: 1.5;
+			font-size: 14px;
+			margin: 2rem 0;
+		}
+
+		.structure li ul li {
+			margin: 1rem 0;
+		}
+
+		.structure .time-title {
+			font-size: 18px;
+		}
+
+		.structure strong {
+			font-size: 14px;
+		}
+		
+		.structure h4 strong{
+			font-size: 24px;
+			line-height: 0;
+		}
+
+		.structure .division-line {
+			margin: 1rem 0;
+			height: 1px;
+			background-color: rgb(224, 224, 224);
+			width: 100%;
+		}
+	}
+
+
+	
+	@media (max-width: 768px) {
+
+		.structure .time-title {
+			font-size: 16px;
+		}
+
+		.structure strong {
+			font-size: 12px;
+		}
+		
+		.structure h4 strong{
+			font-size: 22px;
+			line-height: 0;
+		}
+	}
+
+	@media (max-width: 500px) {
+
+		.content {
+
+			h2 {
+				font-size: 12px;
+			}
+
+			span {
+				font-size: 14px;
+			}
+
+			#logo {
+				margin-top: 0;
+				width: 70%;
+			}
+		}
+		
+		.buttons {
+			gap: 20px;
+		}
+
+		a {
+			padding: 3px 10px;
+			font-size: 8px;
+		}
+
+		.structure {
+			margin-bottom: 10rem;
+		}
+
+		.structure h3 {
+			font-size: 14px;
+			margin-bottom: 1.5rem;
+		}
+		
+		.structure p {
+			font-size: 8px;
+			line-height: 1.5;
+		}
+
+		.structure li {
+			line-height: 1.5;
+			font-size: 8px;
+			margin: 1rem 0;
+		}
+
+		.structure li ul li {
+			margin: 0.5rem 0;
+		}
+
+		.structure .points {
+			margin-bottom: 2rem;
+		}
+
+		.structure strong {
+			font-size: 8px;
+		}
+
+		.structure h4 {
+			margin-top: 2rem;
+		}
+		
+		.structure h4 strong{
+			font-size: 12px;
+			line-height: 0;
+		}
+
+		.structure .division-line {
+			margin: 1rem 0;
+			height: 1px;
+			background-color: rgb(224, 224, 224);
+			width: 100%;
+		}
+
+		.structure .time-title {
+			font-size: 8px;
+		}
+
+		.column {
+			width: 180px;
+		}
+
+		.column strong {
+			font-size: 6px;
+		}
+
+		#info {
+			margin-bottom: 10rem;
+		}
+		
+		#info h3 {
+			font-size: 14px;
+		}
+
+		#info p {
+			font-size: 8px;
+		}
+
+		
+	}
+
 </style>
