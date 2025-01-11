@@ -11,7 +11,7 @@
 <div class="content">
 	<img id="logo" src="./rl-stellarclash.png" alt="rocket-league-stellar-clash">
 	<h1>Rocket League: Stellar Clash</h1>
-	<h2>07/02/2025 - 09/02/2025</h2>
+	<h2>07/02 - 09/02</h2>
 	<span>Inscripciones abiertas</span>
 	<div class="buttons">
 		<a href="https://forms.gle/eUVHKMMXQDMDZpMc6" target="_blank" class="main-button">Inscribirme</a>
@@ -30,7 +30,7 @@
 <section id="structure">
 	<h3>Estructura del Torneo</h3>
 	<p>El evento se desarrollará durante <strong class="gradient-text">3 días consecutivos</strong>, dividiéndose en dos fases principales</p>
-	<h4>Fase de grupos <i> (DAY 1 y DAY 2)</i>:</h4>
+	<h4><strong class="gradient-text-blue">Fase de grupos <i> (DAY 1 y DAY 2)</i> :</strong></h4>
 	<div class="points">
 		<ul>
 			<li>Los 32 equipos participantes se dividirán en <strong class="gradient-text">8 grupos</strong> de <strong class="gradient-text">4 equipos</strong></li>
@@ -53,7 +53,7 @@
 			</li>
 		</ul>
 	</div>
-	<h4>Fase de eliminatorias <i> (DAY 3)</i>:</h4>
+	<h4><strong class="gradient-text-blue">Fase de eliminatorias <i> (DAY 3)</i> :</strong></h4>
 	<div class="points">
 		<ul>
 			<li>Los <strong class="gradient-text">2 mejores equipos</strong> de cada grupo avanzarán a una fase eliminatoria con un total de 16 equipos.</li>
@@ -121,13 +121,13 @@
 	h2 {
 		font-family: Oswald, 'Courier New', Courier, monospace;
 		font-weight: 500;
-		font-size: 50px;
-		margin-bottom: 0rem;
+		font-size: 24px;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 		color: rgb(224, 224, 224);
 		text-shadow: rgb(255, 255, 255) 0px 0px 100px;
 		transition: 0.5s ease-in-out;
 		cursor: default;
-		margin-top: 0;
 	}
 
 	h2:hover {
@@ -137,7 +137,7 @@
 	span {
 		font-family: Oswald, 'Courier New', Courier, monospace;
 		font-weight: 600;
-		font-size: 20px;
+		font-size: 24px;
 		background: #FE305F;
 		background: linear-gradient(to bottom, #FE305F 0%, #FF2985 100%);
 		-webkit-background-clip: text;
@@ -236,12 +236,18 @@
 			line-height: 0;
 		}
 
+		
 		h4 {
-			font-family: Oswald, 'Courier New', Courier, monospace;
-			font-size: 26px;
+			font-family: Oswald, 'Courier New', Courier, monospace !important;
+			font-size: 32px;
 			margin-top: 4rem;
 			margin-bottom: 2rem;
 			line-height: 0;
+		}
+
+		h4 > strong,
+		h4 > strong > i {
+			font-family: Oswald, 'Courier New', Courier, monospace;
 		}
 
 		p {
@@ -273,7 +279,15 @@
 		transition: 0.5s ease-in-out;
 	}
 
-	.gradient-text:hover {
+	.gradient-text-blue {
+		background: #028DA6;
+		background: linear-gradient(to bottom, #028DA6 0%, #8DBFCA 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-shadow: #8DBFCA 0px 0px 10px;
+	}
+
+	.gradient-text:hover{
 		font-size: 105%;
 	}
 </style>
