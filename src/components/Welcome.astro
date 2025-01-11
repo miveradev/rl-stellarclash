@@ -11,7 +11,7 @@
 <div class="content">
 	<img id="logo" src="./rl-stellarclash.png" alt="rocket-league-stellar-clash">
 	<h1>Rocket League: Stellar Clash</h1>
-	<h2>07/02/2025</h2>
+	<h2>07/02/2025 - 09/02/2025</h2>
 	<span>Inscripciones abiertas</span>
 	<div class="buttons">
 		<a href="https://forms.gle/eUVHKMMXQDMDZpMc6" target="_blank" class="main-button">Inscribirme</a>
@@ -24,17 +24,17 @@
 
 <section id="info">
 	<h3>¡Bienvenidos al torneo más frenético del Sistema Solar!</h3>
-	<p>En este evento, hasta <strong><i>32 equipos</i></strong> con temática basada en los astros de nuestro alrededor se enfrentarán en un torneo <strong>3v3</strong> para determinar quién es el mejor y ser merecedor de gobernar nuestro Sistema. <i>¿Te atreves a demostrar que tú y tu grupo sois los verdaderos candidatos al premio?</i></p>
+	<p>En este evento, hasta <strong class="gradient-text"><i>32 equipos</i></strong> con temática basada en los astros de nuestro alrededor se enfrentarán en un torneo <strong class="gradient-text">3v3</strong> para determinar quién es el mejor y ser merecedor de gobernar nuestro Sistema. <i>¿Te atreves a demostrar que tú y tu grupo sois los verdaderos candidatos al premio?</i></p>
 </section>
 
 <section id="structure">
 	<h3>Estructura del Torneo</h3>
-	<p>El evento se desarrollará durante <strong>3 días consecutivos</strong>, dividiéndose en dos fases principales</p>
+	<p>El evento se desarrollará durante <strong class="gradient-text">3 días consecutivos</strong>, dividiéndose en dos fases principales</p>
 	<h4>Fase de grupos <i> (DAY 1 y DAY 2)</i>:</h4>
 	<div class="points">
 		<ul>
-			<li>Los 32 equipos participantes se dividirán en 8 grupos de 4 equipos</li>
-			<li>Cada grupo jugará en un formato de todos contra todos (round robin) a partido único</li>
+			<li>Los 32 equipos participantes se dividirán en <strong class="gradient-text">8 grupos</strong> de <strong class="gradient-text">4 equipos</strong></li>
+			<li>Cada grupo jugará en un formato de todos contra todos (round robin) a <strong class="gradient-text">partido único</strong></li>
 			<li>
 				Se asignarán puntos en función de los resultados: <br>
 				<ul>
@@ -43,7 +43,7 @@
 				</ul>
 			</li>
 			<li>
-				En caso de <strong>empate en puntos</strong>, se utilizarán los siguientes criterios de desempate:
+				En caso de <strong class="gradient-text">empate en puntos</strong>, se utilizarán los siguientes criterios de desempate:
 				<br>
 				<ul>
 					<li><strong>DF</strong> (Diferencia de goles).</li>
@@ -56,10 +56,10 @@
 	<h4>Fase de eliminatorias <i> (DAY 3)</i>:</h4>
 	<div class="points">
 		<ul>
-			<li>Los <strong>2 mejores equipos</strong> de cada grupo avanzarán a una fase eliminatoria con un total de 16 equipos.</li>
-			<li>Los enfrentamientos de eliminatorias se disputarán en un formato <strong>best of 3</strong></li>
+			<li>Los <strong class="gradient-text">2 mejores equipos</strong> de cada grupo avanzarán a una fase eliminatoria con un total de 16 equipos.</li>
+			<li>Los enfrentamientos de eliminatorias se disputarán en un formato <strong class="gradient-text">best of 3</strong></li>
 			<li>
-				La <strong>final</strong> se jugará en un formato <strong>best of 5</strong>
+				La <strong class="gradient-text">final</strong> se jugará en un formato <strong class="gradient-text">best of 5</strong>
 			</li>
 		</ul>
 	</div>
@@ -120,9 +120,10 @@
 	
 	h2 {
 		font-family: Oswald, 'Courier New', Courier, monospace;
-		font-weight: bolder;
+		font-weight: 500;
 		font-size: 50px;
 		margin-bottom: 0rem;
+		color: rgb(224, 224, 224);
 		text-shadow: rgb(255, 255, 255) 0px 0px 100px;
 		transition: 0.5s ease-in-out;
 		cursor: default;
@@ -136,15 +137,28 @@
 	span {
 		font-family: Oswald, 'Courier New', Courier, monospace;
 		font-weight: 600;
-		font-style: italic;
 		font-size: 20px;
-		text-shadow: rgb(255, 255, 255) 0px 0px 100px;
+		background: #FE305F;
+		background: linear-gradient(to bottom, #FE305F 0%, #FF2985 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-shadow: #FE305F 0px 0px 10px;
+		animation: bounce 3s ease-in-out;
+		animation-iteration-count: infinite;
 		transition: 0.5s ease-in-out;
 		cursor: default;
 	}
 
-	span:hover {
-		scale: 105%;
+	@keyframes bounce {
+		0% {
+			scale: 100%;
+		}
+		50% {
+			scale: 105%;
+		}
+		100% {
+			scale: 100%;
+		}
 	}
 
 	.buttons {
@@ -158,8 +172,8 @@
 		padding: 10px 30px;
 		border-radius: 30px;
 		background: none;
-		border: solid 3px white;
-		color: white;
+		border: solid 3px rgb(224, 224, 224);;
+		color: rgb(224, 224, 224);;
 		font-size: 20px;
 		cursor: pointer;
 		transition: 0.5s ease-in-out;
@@ -171,12 +185,27 @@
 	}
 
 	.main-button {
-		background-color: white;
+		background-color: rgb(224, 224, 224);;
 		color: black;
+	}
+
+	.arrows-down {
+		animation: bounceArrows 5s ease-in-out;
+		animation-iteration-count: infinite;
+		transition: 0.5s ease-in-out;
 	}
 
 	.arrows-down > img{
 		width: 2rem;
+	}
+
+	@keyframes bounceArrows {
+		0%, 100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(30px);
+		}
 	}
 
 	#info {
@@ -232,5 +261,19 @@
 			line-height: 2;
 			margin-bottom: 1.5rem;
 		}
+	}
+
+	.gradient-text {
+		background: #FE305F;
+		background: linear-gradient(to bottom, #FE305F 0%, #FF2985 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-shadow: #FE305F 0px 0px 10px;
+		cursor: default;
+		transition: 0.5s ease-in-out;
+	}
+
+	.gradient-text:hover {
+		font-size: 105%;
 	}
 </style>
