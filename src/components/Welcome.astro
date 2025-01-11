@@ -68,62 +68,62 @@
 <section class="structure">
 	<h3>Fechas</h3>
 	<div class="row">
-		<div class="column">
+		<div class="column left">
 			<span class="time-title">Apertura de Inscripciones</span>
 		</div>
 		<div class="column">
-			<strong class="gradient-text">11 de Enero 00:00h CET</strong>
+			<strong class="gradient-text">11/01 00:00h CET</strong>
 		</div>
 	</div>
 	<div class="row">
-		<div class="column">
+		<div class="column left">
 			<span class="time-title">Cierre de Inscripciones</span>
 		</div>
 		<div class="column">
-			<strong class="gradient-text">31 de Enero 23:59h CET</strong>
+			<strong class="gradient-text">31/01 23:59h CET</strong>
 		</div>
 	</div>
 	<div class="division-line"></div>
 	<div class="row">
-		<div class="column">
+		<div class="column left">
 			<span class="time-title">Presentacion de Equipos</span>
 		</div>
 		<div class="column">
-			<strong class="gradient-text">1 de Febrero - 4 de Febrero CET</strong>
+			<strong class="gradient-text">01/02 - 04/02</strong>
 		</div>
 	</div>
 	<div class="division-line"></div>
 	<div class="row">
-		<div class="column">
+		<div class="column left">
 			<span class="time-title">Sorteo de Fase de Grupos</span>
 		</div>
 		<div class="column">
-			<strong class="gradient-text">5 de Febrero, 21:00h CET</strong>
+			<strong class="gradient-text">05/02 21:00h CET</strong>
 		</div>
 	</div>
 	<div class="division-line"></div>
 	<div class="row">
-		<div class="column">
+		<div class="column left">
 			<span class="time-title">DAY 1 (Fase de Grupos)</span>
 		</div>
 		<div class="column">
-			<strong class="gradient-text">7 de Febrero 17:00h CET</strong>
+			<strong class="gradient-text">01/02 17:00h CET</strong>
 		</div>
 	</div>
 	<div class="row">
-		<div class="column">
+		<div class="column left">
 			<span class="time-title">DAY 2 (Fase de Grupos)</span>
 		</div>
 		<div class="column">
-			<strong class="gradient-text">8 de Febrero 17:00h CET</strong>
+			<strong class="gradient-text">08/02 17:00h CET</strong>
 		</div>
 	</div>
 	<div class="row">
-		<div class="column">
+		<div class="column left">
 			<span class="time-title">DAY 3 (Fase de Eliminatorias</span>
 		</div>
 		<div class="column">
-			<strong class="gradient-text">9 de Febrero 15:00h CET</strong>
+			<strong class="gradient-text">09/02 15:00h CET</strong>
 		</div>
 	</div>
 </section>
@@ -498,16 +498,16 @@
 		.content {
 
 			h2 {
-				font-size: 12px;
+				font-size: 20px;
 			}
 
 			span {
-				font-size: 14px;
+				font-size: 20px;
 			}
 
 			#logo {
 				margin-top: 0;
-				width: 70%;
+				width: 85%;
 			}
 		}
 		
@@ -516,8 +516,9 @@
 		}
 
 		a {
-			padding: 3px 10px;
-			font-size: 8px;
+			padding: 6px 18px;
+			font-size: 14px;
+			border: solid 1px rgb(224, 224, 224);
 		}
 
 		.structure {
@@ -525,18 +526,18 @@
 		}
 
 		.structure h3 {
-			font-size: 14px;
+			font-size: 20px;
 			margin-bottom: 1.5rem;
 		}
 		
 		.structure p {
-			font-size: 8px;
+			font-size: 14px;
 			line-height: 1.5;
 		}
 
 		.structure li {
 			line-height: 1.5;
-			font-size: 8px;
+			font-size: 14px;
 			margin: 1rem 0;
 		}
 
@@ -549,7 +550,7 @@
 		}
 
 		.structure strong {
-			font-size: 8px;
+			font-size: 14px;
 		}
 
 		.structure h4 {
@@ -557,7 +558,7 @@
 		}
 		
 		.structure h4 strong{
-			font-size: 12px;
+			font-size: 20px;
 			line-height: 0;
 		}
 
@@ -569,15 +570,23 @@
 		}
 
 		.structure .time-title {
-			font-size: 8px;
+			font-size: 12px;
 		}
 
-		.column {
+		.structure .row {
+			gap: 0;
+		}
+
+		.structure .column {
+			width: 100px;
+		}
+
+		.structure .column.left {
 			width: 180px;
 		}
 
-		.column strong {
-			font-size: 6px;
+		.structure .column strong {
+			font-size: 10px;
 		}
 
 		#info {
@@ -585,14 +594,20 @@
 		}
 		
 		#info h3 {
-			font-size: 14px;
+			font-size: 20px;
 		}
 
 		#info p {
-			font-size: 8px;
+			font-size: 14px;
 		}
 
 		
+	}
+
+	@media (max-width: 345px) {
+		.structure .column strong {
+			font-size: 8px;
+		}
 	}
 
 </style>
